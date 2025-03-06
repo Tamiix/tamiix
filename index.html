@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tamiix's world</title>
+    <!-- Pixel Font: Press Start 2P -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Default theme is Heaven -->
+  <body class="theme-heaven">
+    <!-- Navigation (text splitting disabled here) -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">What I Can Offer</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+      <div class="hero">
+        <h1 id="hero-title">WELCOME TO HEAVEN</h1>
+        <p id="hero-subtitle">Where the skies are limitless.</p>
+        <p id="hero-quote" class="hero-quote">
+          Life is a canvas, paint it with your dreams.
+        </p>
+        <a href="#about" class="btn">LEARN MORE</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="content">
+        <h2>ABOUT ME</h2>
+        <p>
+          I'm Tamiix, a passionate collaborator and private gambler who loves
+          diving into the hottest corners of the digital realm. I blend creativity
+          and strategy to ignite projects and keep them blazing.
+        </p>
+      </div>
+    </section>
+
+    <!-- What I Can Offer Section -->
+    <section id="services">
+      <div class="content">
+        <h2>WHAT I CAN OFFER</h2>
+        <div class="service-boxes">
+          <div class="service-box">
+            <h3>MARKETING</h3>
+            <p>
+              Spreading the word, building hype, and lighting up your brand.
+            </p>
+          </div>
+          <div class="service-box">
+            <h3>COLLAB MANAGER</h3>
+            <p>
+              Connecting teams and communities to spark mutual success.
+            </p>
+          </div>
+          <div class="service-box">
+            <h3>RETARD & PRIVATE GAMBLER</h3>
+            <p>
+              Taking calculated risks in the flames of chance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes Section (Quote Generator) -->
+    <section id="quotes">
+      <div class="content">
+        <h2>QUOTE GENERATOR</h2>
+        <p id="quote-instructions">
+          Click the button below to generate a life &amp; feelings quote.
+        </p>
+        <button id="generate-quote" class="btn">Generate Quote</button>
+        <p id="generated-quote" class="generated-quote"></p>
+      </div>
+    </section>
+
+    <!-- Socials Section (Footer) -->
+    <footer id="socials">
+      <h2>CONNECT WITH ME</h2>
+      <p>
+        Discord: <strong>tamiixno</strong><br />
+        Twitter:
+        <a href="https://twitter.com/tamiix_" target="_blank" rel="noopener">
+          @tamiix_
+        </a>
+      </p>
+      <p>rights reserved to the ginger tamiix</p>
+    </footer>
+
+    <!-- Theme Switcher (Bottom Left) -->
+    <div class="theme-switcher">
+      <button class="theme-btn" data-theme="heaven">Heaven</button>
+      <button class="theme-btn" data-theme="earth">Earth</button>
+      <button class="theme-btn" data-theme="hell">Hell</button>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div id="mouse-follower"></div>
+
+    <!-- Custom Pixel Audio Player (Bottom Right) -->
+    <div class="dj-player">
+      <audio id="dj-audio" src="vida_la_vida.mp3" loop></audio>
+      <div class="pixel-audio-controls">
+        <button id="play-btn">PLAY</button>
+        <button id="pause-btn">PAUSE</button>
+        <div class="time-display">
+          <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <input type="range" id="progress-bar" min="0" max="100" value="0" />
+      </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
